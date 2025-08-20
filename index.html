@@ -3,12 +3,13 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>INSIGHT SERVICES</title>
+        <title>INSIGHTS SERVICES</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="manifest" href="site.webmanifest">
 		<link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/logo.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 		<!-- CSS here -->
             <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -22,6 +23,56 @@
             <link rel="stylesheet" href="assets/css/slick.css">
             <link rel="stylesheet" href="assets/css/nice-select.css">
             <link rel="stylesheet" href="assets/css/style.css">
+            <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+
+            <style>.do-icon i {
+   font-size: 60px; 
+   color: #2c7a7b; /* optional custom color */
+   margin-bottom: 15px;
+}
+.poster-train-wrapper {
+    overflow: hidden;
+    width: 100%;
+    background: #fff;
+    padding: 20px 0;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.poster-train {
+    display: flex;
+    width: calc(200%); /* duplicate images for seamless loop */
+    animation: scroll 20s linear infinite; /* speed and loop */
+}
+
+.poster-train a {
+    display: block;
+    margin: 0 10px;
+}
+
+.poster-train img {
+    height: 600px;
+    width: auto;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.poster-train img:hover {
+    transform: scale(1.05);
+}
+
+/* Animation keyframes */
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); } /* scroll half width for seamless loop */
+}
+
+/* Responsive */
+@media (max-width: 768px){
+    .poster-train img {
+        height: 250px;
+    }
+}
+</style>
    </head>
 
    <body>
@@ -107,16 +158,32 @@
                             <img src="assets/img/hero/hero_right.png" alt="" style="width: 100%; height: auto;">
                         </div>
                     </div>
-                    <div class="col-lg-7 col-md-9">
-                        <div class="hero__caption">
-                            <h1 data-animation="fadeInLeft" data-delay=".4s">We Collect<br> High Quality Leads</h1>
-                            <p data-animation="fadeInLeft" data-delay=".6s">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravi.</p>
-                            <!-- Hero-btn -->
-                            <div class="hero__btn" data-animation="fadeInLeft" data-delay=".8s">
-                                <a href="contact.html" class="btn hero-btn">Contact Us</a>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="col-lg-7 col-md-9"> 
+    <div class="hero__caption">
+<h1 data-animation="fadeInLeft" data-delay=".4s">
+  Trusted Pest Control & Cleaning Solutions
+</h1>
+<p data-animation="fadeInLeft" data-delay=".6s">
+  At Insights Service, we deliver expert cleaning and pest control services for homes and businesses — creating cleaner, safer, and healthier spaces you can rely on.
+</p>
+<!-- Hero-btn -->
+        <div class="hero__btn" data-animation="fadeInLeft" data-delay=".8s">
+<!-- Contact Us -->
+<!-- <a href="https://api.whatsapp.com/send?phone=97471570668&text=Hello%2C%20I%27m%20interested%20in%20your%20pest%20control%20and%20cleaning%20services.%20Can%20you%20share%20more%20details%3F" 
+   class="btn hero-btn">Contact Us</a> -->
+
+<!-- Book Now -->
+<a href="https://api.whatsapp.com/send?phone=97471570668&text=Hello%2C%20I%20would%20like%20to%20book%20a%20pest%20control%20and%20cleaning%20service.%20Please%20guide%20me%20through%20the%20process." 
+   class="btn hero-btn">Book Now</a>
+
+<!-- Request a Call Back -->
+<!-- <a href="https://api.whatsapp.com/send?phone=97471570668&text=Hello%2C%20please%20call%20me%20back%20regarding%20your%20services.%20Here%20are%20my%20details%3A" 
+   class="btn hero-btn">Request a Call Back</a> -->
+           
+        </div>
+    </div>
+</div>  
+
                 </div>
             </div>
         </div>
@@ -124,504 +191,176 @@
 </div>
 
         <!-- Slider Area End-->
-        <!-- What We do start-->
-        <div class="what-we-do we-padding">
-            <div class="container">
-                <!-- Section-tittle -->
-                <div class="row d-flex justify-content-center">
-                    <div class="col-lg-8">
-                        <div class="section-tittle text-center">
-                            <h2>What We Will Do For Your Business​</h2>
-                        </div>
+      <!-- What We do start-->
+<div class="what-we-do we-padding">
+    <div class="container">
+        <!-- Section-title -->
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-8">
+                <div class="section-tittle text-center">
+                    <h2>What We Do For Your Home & Business</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Pest Control -->
+            <div class="col-lg-4 col-md-6">
+                <div class="single-do text-center mb-30">
+                    <div class="do-icon">
+   <i class="fa-solid fa-bug fa-3x"></i>
+</div>
+                    <div class="do-caption">
+                        <h4>Pest Control Services</h4>
+                        <p>Safe and effective solutions for cockroaches, termites, rodents, mosquitoes, and more — keeping your spaces pest-free and healthy.</p>
+                    </div>
+                    <div class="do-btn">
+                        <a href="contact.html"><i class="ti-arrow-right"></i> Get Started</a>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-4 col-md-6">
-                        <div class="single-do text-center mb-30">
-                            <div class="do-icon">
-                                <span  class="flaticon-tasks"></span>
-                            </div>
-                            <div class="do-caption">
-                                <h4>Link Building</h4>
-                                <p>Hunky dory barney fanny around up the duff no biggie loo cup of tea jolly good ruddy say arse!</p>
-                            </div>
-                            <div class="do-btn">
-                                <a href="#"><i class="ti-arrow-right"></i> get started</a>
-                            </div>
-                        </div>
+            </div>
+            <!-- Residential Cleaning -->
+            <div class="col-lg-4 col-md-6">
+                <div class="single-do active text-center mb-30">
+                    <div class="do-icon">
+   <i class="fa-solid fa-house fa-3x"></i>
+</div>
+                    <div class="do-caption">
+                        <h4>Home Cleaning</h4>
+                        <p>From deep cleaning to regular upkeep, we ensure your home stays spotless, hygienic, and welcoming for your family and guests.</p>
                     </div>
-                     <div class="col-lg-4 col-md-6">
-                        <div class="single-do active text-center mb-30">
-                            <div class="do-icon">
-                                <span  class="flaticon-social-media-marketing"></span>
-                            </div>
-                            <div class="do-caption">
-                                <h4>Content marketing</h4>
-                                <p>Hunky dory barney fanny around up the duff no biggie loo cup of tea jolly good ruddy say arse!</p>
-                            </div>
-                            <div class="do-btn">
-                                <a href="#"><i class="ti-arrow-right"></i> get started</a>
-                            </div>
-                        </div>
+                    <div class="do-btn">
+                        <a href="contact.html"><i class="ti-arrow-right"></i> Get Started</a>
                     </div>
-                     <div class="col-lg-4 col-md-6">
-                        <div class="single-do text-center mb-30">
-                            <div class="do-icon">
-                                <span  class="flaticon-project"></span>
-                            </div>
-                            <div class="do-caption">
-                                <h4>On Page SEO</h4>
-                                <p>Hunky dory barney fanny around up the duff no biggie loo cup of tea jolly good ruddy say arse!</p>
-                            </div>
-                            <div class="do-btn">
-                                <a href="#"><i class="ti-arrow-right"></i> get started</a>
-                            </div>
-                        </div>
+                </div>
+            </div>
+            <!-- Commercial Cleaning -->
+            <div class="col-lg-4 col-md-6">
+                <div class="single-do text-center mb-30">
+                    <div class="do-icon">
+   <i class="fa-solid fa-building fa-3x"></i>
+</div>
+                    <div class="do-caption">
+                        <h4>Office & Commercial Cleaning</h4>
+                        <p>Professional cleaning services for offices, shops, and commercial spaces — ensuring a safe, clean, and productive environment.</p>
+                    </div>
+                    <div class="do-btn">
+                        <a href="contact.html"><i class="ti-arrow-right"></i> Get Started</a>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- What We do End-->
+    </div>
+</div>
+<!-- What We do End-->
+
         <!-- We Create Start -->
         <div class="we-create-area create-padding">
-            <div class="container">
-                <div class="row d-flex align-items-end">
-                    <div class="col-lg-6 col-md-12">
-                        <div class="we-create-img">
-                            <img src="assets/img//service/we-create.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-12">
-                        <div class="we-create-cap">
-                            <h3>We Create a Steps to Build a Successful Digital Product</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis orem ipsum dolor sit amet, consectetur adipiscing.</p>
-                            <a href="#" class="btn">Contact Us</a>
-                        </div>
-                    </div>
+    <div class="container">
+        <div class="row d-flex align-items-end">
+            <!-- Image -->
+            <div class="col-lg-6 col-md-12">
+                <div class="we-create-img">
+                    <img src="assets/img/service/we-create.jpg" alt="Cleaning and Pest Control Services">
+                </div>
+            </div>
+            <!-- Content -->
+            <div class="col-lg-6 col-md-12">
+                <div class="we-create-cap">
+                    <h3>We Create Cleaner & Safer Spaces for You</h3>
+                    <p>At <b>Insights Service</b>, we believe a clean and pest-free environment is the key to a healthier lifestyle and a more productive workplace. 
+                    From deep cleaning homes to providing reliable pest control for businesses, our trained team uses safe and effective methods to deliver results you can trust.</p>
+                    <a href="https://api.whatsapp.com/send?phone=97471570668&text=Hello%2C%20I%27m%20interested%20in%20your%20pest%20control%20and%20cleaning%20services.%20Can%20you%20share%20more%20details%3F" 
+                       class="btn hero-btn">Contact Us</a>
                 </div>
             </div>
         </div>
-        <!-- We Create End -->
-        <!-- Generating Start -->
-        <div class="generating-area ">
-            <div class="container">
-                 <!-- Section-tittle -->
-                 <div class="row d-flex justify-content-center">
-                    <div class="col-lg-8">
-                        <div class="section-tittle text-center">
-                            <h2>Generating New Customers Via Online Mode​​</h2>
-                        </div>
+    </div>
+</div>
+
+<div class="poster-train-wrapper">
+    <div class="poster-train">
+        <!-- Repeat images to make smooth loop -->
+        <a href="contact.html"><img src="assets/img/posters/1.jpg" alt="Poster 1"></a>
+        <a href="contact.html"><img src="assets/img/posters/2.jpg" alt="Poster 2"></a>
+        <a href="contact.html"><img src="assets/img/posters/3.jpg" alt="Poster 3"></a>
+        <a href="contact.html"><img src="assets/img/posters/4.jpg" alt="Poster 4"></a>
+
+        <!-- Repeat again for seamless scroll -->
+        <a href="contact.html"><img src="assets/img/posters/1.jpg" alt="Poster 1"></a>
+        <a href="contact.html"><img src="assets/img/posters/2.jpg" alt="Poster 2"></a>
+        <a href="contact.html"><img src="assets/img/posters/3.jpg" alt="Poster 3"></a>
+        <a href="contact.html"><img src="assets/img/posters/4.jpg" alt="Poster 4"></a>
+    </div>
+</div>
+
+
+
+<!-- Have Project Section Start -->
+<div class="have-project" style="background:#2c7a7b; padding:50px 0; color:#fff;">
+    <div class="container">
+        <div class="haveAproject">
+            <div class="row d-flex align-items-center">
+                <!-- Text -->
+                <div class="col-xl-7 col-lg-9 col-md-12">
+                    <div class="wantToWork-caption">
+                        <h2>Need Professional Cleaning or Pest Control?</h2>
+                        <p>At Insights Service, we provide reliable home and office cleaning, along with effective pest control solutions. Let us help you maintain a healthy, safe environment.</p>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-6 col-md-6">
-                        <div class="single-generating d-flex mb-30">
-                            <div class="generating-icon">
-                                <span class="flaticon-chart"></span>
-                            </div>
-                            <div class="generating-cap">
-                                <h4>All Sizes Business</h4>
-                                <p>Seddo eiusmod tempor incididunt labore lore magna aliqua uisipsum suspendis incididun
-                                    se ultrices gravida. </p>
-                            </div>
-                        </div>
-                    </div> 
-                    <div class="col-lg-6 col-md-6">
-                        <div class="single-generating d-flex mb-30">
-                            <div class="generating-icon">
-                                <span class="flaticon-social-media-marketing"></span>
-                            </div>
-                            <div class="generating-cap">
-                                <h4>Awesome Results</h4>
-                                <p>Seddo eiusmod tempor incididunt labore lore magna aliqua uisipsum suspendis incididun
-                                    se ultrices gravida. </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6">
-                        <div class="single-generating d-flex mb-30">
-                            <div class="generating-icon">
-                                <span class="flaticon-speaker"></span>
-                            </div>
-                            <div class="generating-cap">
-                                <h4>Keep you in the Loop</h4>
-                                <p>Seddo eiusmod tempor incididunt labore lore magna aliqua uisipsum suspendis incididun
-                                    se ultrices gravida. </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6">
-                        <div class="single-generating d-flex mb-30">
-                            <div class="generating-icon">
-                                <span class="flaticon-growth"></span>
-                            </div>
-                            <div class="generating-cap">
-                                <h4>Significant ROI</h4>
-                                <p>Seddo eiusmod tempor incididunt labore lore magna aliqua uisipsum suspendis incididun
-                                    se ultrices gravida. </p>
-                            </div>
-                        </div>
-                    </div>
+                <!-- Button -->
+                <div class="col-xl-5 col-lg-3 col-md-12">
+                   <div class="wantToWork-btn f-right">
+                        <a href="contact.html" class="btn btn-ans" style="background:#fff; color:#2c7a7b; padding:12px 30px; border-radius:5px; font-weight:bold;">Contact Us</a>
+                   </div>
                 </div>
             </div>
         </div>
-        <!-- Generating End -->
-        <!--Choose Best start-->
-        <div class="choose-best choose-padding">
-            <div class="container">
-                <!-- Section-tittle -->
-                <div class="row d-flex justify-content-center">
-                    <div class="col-lg-7">
-                        <div class="section-tittle text-center">
-                            <h2>Choose Your Very Best Pricing Plan </h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4 col-md-6">
-                        <div class="single-choose text-center mb-30">
-                            <div class="do-icon">
-                                <span  class="flaticon-growth"></span>
-                            </div>
-                            <div class="do-caption">
-                                <h4>$ 05.00</h4>
-                                <ul>
-                                    <li>Increase traffic 50%</li>
-                                    <li>Social Media Marketing</li>
-                                    <li>10 Free Optimization</li>
-                                    <li>24/7  support</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                     <div class="col-lg-4 col-md-6">
-                        <div class="single-choose active text-center mb-30">
-                            <div class="do-icon">
-                                <span class="flaticon-award"></span>
-                            </div>
-                            <div class="do-caption">
-                                <h4>$ 20.00</h4>
-                                <ul>
-                                    <li>Increase traffic 50%</li>
-                                    <li>Social Media Marketing</li>
-                                    <li>10 Free Optimization</li>
-                                    <li>24/7  support</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                     <div class="col-lg-4 col-md-6">
-                        <div class="single-choose text-center mb-30">
-                            <div class="do-icon">
-                                <span  class="flaticon-project"></span>
-                            </div>
-                            <div class="do-caption">
-                                <h4>$ 30.00</h4>
-                                <ul>
-                                    <li>Increase traffic 50%</li>
-                                    <li>Social Media Marketing</li>
-                                    <li>10 Free Optimization</li>
-                                    <li>24/7  support</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Choose Best do End-->
-        <!-- Visit Stuffs Start -->
-        <div class="visit-area fix visite-padding">
-            <div class="container">
-                <!-- Section-tittle -->
-                <div class="row d-flex justify-content-center">
-                    <div class="col-lg-6 pr-0">
-                        <div class="section-tittle text-center">
-                            <h2>Visit Some Of Our Awsome Stuffs</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container-fluid p-0">
-                <div class="row ">
-                    <div class="col-lg-3 col-md-4">
-                        <div class="single-visited mb-30">
-                            <div class="visited-img">
-                                <img src="assets/img/visit/visit_1.jpg" alt="">
-                            </div>
-                            <div class="visited-cap">
-                                <h3><a href="#">citmv.com</a></h3>
-                                <p>Email Marketing</p>
-                            </div>
-                        </div>
-                    </div> 
-                     <div class="col-lg-3 col-md-4">
-                        <div class="single-visited mb-30">
-                            <div class="visited-img">
-                                <img src="assets/img/visit/visit_2.jpg" alt="">
-                            </div>
-                            <div class="visited-cap">
-                                <h3><a href="#">mvsp.net</a></h3>
-                                <p>Email Marketing</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4">
-                        <div class="single-visited mb-30">
-                            <div class="visited-img">
-                                <img src="assets/img/visit/visit_3.jpg" alt="">
-                            </div>
-                            <div class="visited-cap">
-                                <h3><a href="#">dmcal.co</a></h3>
-                                <p>Email Marketing</p>
-                            </div>
-                        </div>
-                    </div> 
-                    <div class="col-lg-3 col-md-4">
-                        <div class="single-visited mb-30">
-                            <div class="visited-img">
-                                <img src="assets/img/visit/visit_4.jpg" alt="">
-                            </div>
-                            <div class="visited-cap">
-                                <h3><a href="#">dmco.net</a></h3>
-                                <p>Email Marketing</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Visit Stuffs Start -->
-         <!-- Testimonial Start -->
-         <div class="testimonial-area">
-            <div class="container">
-               <div class="testimonial-main">
-                    <!-- Section-tittle -->
-                    <div class="row d-flex justify-content-center">
-                        <div class="col-lg-5  col-md-8 pr-0">
-                            <div class="section-tittle text-center">
-                                <h2>What Client Say About Us</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row d-flex justify-content-center">
-                            <div class="col-lg-10 col-md-9">
-                                <div class="h1-testimonial-active">
-                                    <!-- Single Testimonial -->
-                                    <div class="single-testimonial text-center">
-                                        <div class="testimonial-caption ">
-                                            <div class="testimonial-top-cap">
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
-                                            </div>
-                                            <!-- founder -->
-                                            <div class="testimonial-founder d-flex align-items-center justify-content-center">
-                                                <div class="founder-img">
-                                                    <img src="assets/img/testmonial/testimonial.png" alt="">
-                                                </div>
-                                            <div class="founder-text">
-                                                <span>Oliva jems</span>
-                                                <p>UIX designer</p>
-                                            </div>
-                                            </div>
-                                        </div>
-                                    </div><!-- Single Testimonial -->
-                                    <div class="single-testimonial text-center">
-                                        <div class="testimonial-caption ">
-                                            <div class="testimonial-top-cap">
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
-                                            </div>
-                                            <!-- founder -->
-                                            <div class="testimonial-founder d-flex align-items-center justify-content-center">
-                                                <div class="founder-img">
-                                                    <img src="assets/img/testmonial/testimonial.png" alt="">
-                                                </div>
-                                            <div class="founder-text">
-                                                <span>Oliva jems</span>
-                                                <p>UIX designer</p>
-                                            </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                    </div>
-               </div>
-            </div>
-        </div>
-        <!-- Testimonial End -->
-        <!-- Tips Triks Start -->
-        <div class="tips-triks-area tips-padding">
-            <div class="container">
-                 <!-- Section-tittle -->
-                 <div class="row d-flex justify-content-center">
-                    <div class="col-lg-6 col-md-8 pr-0">
-                        <div class="section-tittle text-center">
-                            <h2>Tips and Tricks From Our Exparts</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="single-tips mb-50">
-                            <div class="tips-img">
-                                <img src="assets/img/tips/tips_1.jpg" alt="">
-                            </div>
-                            <div class="tips-caption">
-                                <h4><a href="#">Twice profit than before you ever got</a></h4>
-                                <span>Continue Reading</span>
-                                <p>March 3, 2020</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="single-tips mb-50">
-                            <div class="tips-img">
-                                <img src="assets/img/tips/tips_2.jpg" alt="">
-                            </div>
-                            <div class="tips-caption">
-                                <h4><a href="#">Twice profit than before you ever got</a></h4>
-                                <span>Continue Reading</span>
-                                <p>March 3, 2020</p>
-                            </div>
-                        </div>
-                    </div>
-                     <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="single-tips mb-50">
-                            <div class="tips-img">
-                                <img src="assets/img/tips/tips_3.jpg" alt="">
-                            </div>
-                            <div class="tips-caption">
-                                <h4><a href="#">Twice profit than before you ever got</a></h4>
-                                <span>Continue Reading</span>
-                                <p>March 3, 2020</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Tips Triks End -->
-         <!-- have-project Start-->
-         <div class="have-project">
-            <div class="container">
-                <div class="haveAproject"  data-background="assets/img/team/have.jpg">
-                    <div class="row d-flex align-items-center">
-                        <div class="col-xl-7 col-lg-9 col-md-12">
-                            <div class="wantToWork-caption">
-                                <h2>Have project in mind?</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut.</p>
-                            </div>
-                        </div>
-                        <div class="col-xl-5 col-lg-3 col-md-12">
-                           <div class="wantToWork-btn f-right">
-                                <a href="#" class="btn btn-ans">Contact Us</a>
-                           </div>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-        <!-- have-project End -->
+    </div>
+</div>
+<!-- Have Project Section End -->
+
 
     </main>
-   <footer>
-
-       <!-- Footer Start-->
-      <div class="footer-main" data-background="assets/img/shape/footer_bg.png">
-        <div class="footer-area footer-padding">
-            <div class="container">
-                <div class="row d-flex justify-content-between">
-                    <div class="col-lg-3 col-md-4 col-sm-8">
-                       <div class="single-footer-caption mb-50">
-                         <div class="single-footer-caption mb-30">
-                              <!-- logo -->
-                             <div class="footer-logo">
-                                 <a href="index.html"><img src="assets/img/logo/logo2_footer.png" alt=""></a>
-                             </div>
-                             <div class="footer-tittle">
-                                 <div class="footer-pera">
-                                     <p class="info1">221B Baker Street, P.O Box 353 Park <br> Road, USA - 215431</p>
-                                     <p class="info2">info@yourdomain.com</p>
-                                </div>
-                             </div>
-                             <div class="footer-social">
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fas fa-globe"></i></a>
-                                <a href="#"><i class="fab fa-behance"></i></a>
-                            </div>
-                         </div>
-                       </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-sm-5">
-                        <div class="single-footer-caption mb-50">
-                            <div class="footer-tittle">
-                                <h4>Quick Links</h4>
-                                <ul>
-                                    <li><a href="about.html">About</a></li>
-                                    <li><a href="about.html">Features</a></li>
-                                    <li><a href="single-blog.html">Pricing</a></li>
-                                    <li><a href="blog.html">Blog</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-sm-7">
-                        <div class="single-footer-caption mb-50">
-                            <div class="footer-tittle">
-                                <h4>Support</h4>
-                                <ul>
-                                    <li><a href="#">Privacy Policy</a></li>
-                                    <li><a href="#">Terms & Conditions</a></li>
-                                    <li><a href="#"> Sitemap</a></li>
-                                    <li><a href="#">FAQs</a></li>
-                                    <li><a href="#">Report a bugb</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-5">
-                        <div class="single-footer-caption mb-50">
-                            <div class="footer-tittle">
-                                <h4>Core Features</h4>
-                                <ul>
-                                 <li><a href="#">Email Marketing</a></li>
-                                 <li><a href="#"> Offline SEO</a></li>
-                                 <li><a href="#">Social Media Marketing</a></li>
-                                 <li><a href="#">Lead Generation</a></li>
-                                 <li><a href="#"> 24/7 Support</a></li>
-                             </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<footer>
+    <!-- Footer Start -->
+    <div style="background:#2c7a7b; color:#fff; padding:40px 0 20px; font-family:Arial, sans-serif;">
+        <div class="container" style="display:flex; flex-wrap:wrap; justify-content:space-between; align-items:flex-start; gap:30px;">
+            
+            <!-- Left Column: Logo & Contact -->
+            <div style="flex:1; min-width:250px;">
+                <a href="index.html">
+                    <img src="assets/img/logo/logo2_footer.png" alt="Insights Service Logo" style="height:50px; margin-bottom:15px;">
+                </a>
+                <p style="margin:5px 0; font-size:14px; color:#fff;">Doha, Qatar</p>
+                <p style="margin:5px 0; font-size:14px; color:#fff;">Email: <a href="mailto:insightsservicess@gmail.com" style="color:#fff; text-decoration:underline;">insightsservicess@gmail.com</a></p>
+                <p style="margin:5px 0; font-size:14px; color:#fff;">Phone: <a href="tel:+97471570668" style="color:#fff; text-decoration:underline;">+974 71570668</a></p>
             </div>
-        </div>
-        <!-- footer-bottom aera -->
-        <div class="footer-bottom-area footer-bg">
-            <div class="container">
-                <div class="footer-border">
-                     <div class="row d-flex align-items-center">
-                         <div class="col-xl-12 ">
-                             <div class="footer-copy-right text-center">
-                                 <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ti-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-                             </div>
-                         </div>
-                     </div>
-                </div>
-            </div>
-        </div>
-      </div>
-       <!-- Footer End-->
 
-   </footer>
+            <!-- Right Column: Quick Links -->
+            <div style="flex:1; min-width:200px;">
+                <h4 style="margin-bottom:10px; font-size:16px; color:#fff;">Quick Links</h4>
+                <ul style="list-style:none; padding:0; margin:0; font-size:14px; line-height:1.8;">
+                    <li><a href="about.html" style="color:#fff; text-decoration:none;">About</a></li>
+                    <li><a href="services.html" style="color:#fff; text-decoration:none;">Services</a></li>
+                    <li><a href="contact.html" style="color:#fff; text-decoration:none;">Contact</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Footer Bottom -->
+        <div style="background:#1e5556; text-align:center; padding:12px 0; margin-top:20px; font-size:13px; color:#fff;">
+            &copy; <script>document.write(new Date().getFullYear());</script> Insights Service. All rights reserved.
+        </div>
+    </div>
+    <!-- Footer End -->
+</footer>
+
+
    
 	<!-- JS here -->
-	
+	<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> -->
+
 		<!-- All JS Custom Plugins Link Here here -->
         <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
 		<!-- Jquery, Popper, Bootstrap -->
